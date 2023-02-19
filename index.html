@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	
 	<link rel="stylesheet" type="text/css" href="estilo.css">
+	
 </head>
 <body>
+	
     <h1> Ciudad Mitad del Mundo </h1>
     <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Ciudad_Mitad_del_Mundo.jpg/270px-Ciudad_Mitad_del_Mundo.jpg"
           alt="Monumento a la expedición Francesa" width="400" height="453" />
@@ -15,7 +18,6 @@
     <h1> Calculadora de Distancia a la Mitad del Mundo</h1>
     <p>Su ubicación actual: <span id="location"></span></p>
     <p>Distancia a la mitad del mundo: <span id="distance"></span></p>
-     
   <script>
     // Obtener la ubicación actual
     navigator.geolocation.getCurrentPosition(function (position) {
@@ -45,5 +47,6 @@
     document.getElementById("distance").innerHTML = d + " km";
     }   );
   </script>
+	
 </body>
 </html>
